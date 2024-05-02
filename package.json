@@ -2,9 +2,10 @@
   "name": "api-vanilla-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "tsc && node backend/server.ts",
+    "server": "tsc && nodemon backend/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8"
   }
 }
